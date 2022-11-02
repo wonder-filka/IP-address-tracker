@@ -60,7 +60,7 @@ h1 {
   padding-top: 4vh;
   padding-bottom: 3vh;
   color: white;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 400;
 }
 
@@ -98,7 +98,7 @@ button:hover {
 .result {
   width: 80%;
   position: absolute;
-  margin-top: 25vh;
+  margin-top: 26vh;
   left: 10%;
   background-color: white;
   padding: 2vh;

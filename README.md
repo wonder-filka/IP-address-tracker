@@ -9,7 +9,7 @@ Users should be able to:
 
 ## Screenshot
 
-![](./screenshot.PNG)
+![](./screenshot.png)
 
 ### Links
 
