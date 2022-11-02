@@ -96,10 +96,10 @@ button:hover {
 }
 
 .result {
-  width: 80%;
+  width: 70%;
   position: absolute;
   margin-top: 26vh;
-  left: 10%;
+  left: 15%;
   background-color: white;
   padding: 2vh;
   border: transparent;
