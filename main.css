@@ -77,6 +77,10 @@ h1 {
   outline: none;
 }
 
+#searchInput:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
 #searchInput:hover,
 button:hover {
   cursor: pointer;
@@ -91,10 +95,10 @@ button:hover {
 }
 
 .result {
-  width: 80%;
+  width: 70%;
   position: absolute;
   margin-top: 25vh;
-  left: 10%;
+  left: 15%;
   background-color: white;
   padding: 2vh;
   border: transparent;
