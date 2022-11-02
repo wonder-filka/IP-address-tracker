@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>IP Address Tracker</title>
+</head>
+
+<body>
+  <div class="bg">
+    <h1>IP Address Tracker</h1>
+    <form id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search for any IP address or domain">
+      <button type="submit" id="searchSubmit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+        </svg>
+      </button>
+    </form>
+  </div>
+  <div class="result">
+    <div class="resultWrap">
+      <div class="resultItem">
+        <div class="resultNames">IP Address</div>
+        <div id="userIP" class="resultUser">192.212.174.101</div>
+      </div>
+      <div class="resultItem">
+        <div class="resultNames">Location</div>
+        <div id="userLocation" class="resultUser">Brooklyn, NY, 10001</div>
+      </div>
+      <div class="resultItem">
+        <div class="resultNames">Timezone</div>
+        <div id="userTimezone" class="resultUser">UTC -05:00</div>
+      </div class="resultNames">
+      <div class="resultItem">
+        <div class="resultNames">ISP</div>
+        <div id="userISP" class="resultUser">SpaceX, Starlink</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="map">
+
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+</body>
+
+</html>

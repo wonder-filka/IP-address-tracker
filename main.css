@@ -1,0 +1,146 @@
+@media (max-width: 800px) {
+  #searchForm {
+    margin: 0 2vh;
+  }
+
+  #searchInput {
+    width: 100% !important;
+  }
+
+  .result {
+    width: calc(100% - 8vh) !important;
+    left: 0 !important;
+    margin: 20vh 2vh !important;
+  }
+
+  .resultWrap {
+    display: block !important;
+  }
+
+  .resultItem {
+    text-align: center !important;
+    padding: 1vh 0;
+  }
+
+  .resultItem:nth-child(1),
+  .resultItem:nth-child(2),
+  .resultItem:nth-child(3) {
+    border-right: none !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.bg {
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 35vh;
+}
+
+h1 {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#searchInput {
+  width: 35%;
+  height: 7vh;
+  border-radius: 10px 0 0 10px;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  border-color: transparent;
+}
+
+#searchInput:focus {
+  outline: none;
+}
+
+#searchInput:hover,
+button:hover {
+  cursor: pointer;
+}
+
+#searchSubmit {
+  height: 7vh;
+  width: 7vh;
+  border-radius: 0 10px 10px 0;
+  border-color: transparent;
+  background-color: hsl(0, 0%, 17%);
+}
+
+.result {
+  width: 80%;
+  position: absolute;
+  margin-top: 25vh;
+  left: 10%;
+  background-color: white;
+  padding: 2vh;
+  border: transparent;
+  border-radius: 14px;
+  z-index: 100;
+  box-shadow: 0px 10px 27px 15px rgba(0, 0, 0, 0.2);
+  color: hsl(0, 0%, 17%);
+}
+
+.resultWrap {
+  display: flex;
+  padding: 3vh 1vh;
+  flex-wrap: wrap;
+}
+
+.resultItem:nth-child(1),
+.resultItem:nth-child(2),
+.resultItem:nth-child(3) {
+  border-right: 1px solid hsl(0, 0%, 59%);
+}
+
+.resultItem {
+  flex: 1;
+  text-align: left;
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+
+.resultNames {
+  color: hsl(0, 0%, 59%);
+  font-weight: 700;
+  padding-bottom: 1vh;
+  font-size: 16px;
+}
+
+.resultNames {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.resultUser {
+  font-weight: 700;
+}
+
+#map {
+  height: 65vh;
+  z-index: 1;
+}
