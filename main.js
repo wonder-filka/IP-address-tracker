@@ -10,7 +10,9 @@ searchForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  if (searchInput.value !== "") {
+  let mapNew = document.querySelector("#mapWrap");
+  mapNew.innerHTML = '<div id="map"></div>';
+  if (searchInput.value != "") {
     getInformation(searchInput.value);
   } else {
     return null;
@@ -35,14 +37,15 @@ function showResult(response) {
   userLocation.innerHTML = `${response.data.location.city}, ${response.data.location.country}`;
   userTimezone.innerHTML = response.data.location.timezone;
   userISP.innerHTML = response.data.isp;
-  var container = L.DomUtil.get("map");
-  if (container != null) {
-    container._leaflet_id = "";
-  }
-  var map = L.map("map").setView(
-    [response.data.location.lat, response.data.location.lng],
-    13
-  );
+
+  let lat = response.data.location.lat;
+  let lot = response.data.location.lng;
+
+  createMap(lat, lot);
+}
+
+function createMap(lat, lot) {
+  var map = L.map("map").setView([lat, lot], 13);
 
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
@@ -54,7 +57,7 @@ function showResult(response) {
     iconSize: [46, 56],
   });
 
-  L.marker([response.data.location.lat, response.data.location.lng], {
+  L.marker([lat, lot], {
     icon: blackIcon,
   }).addTo(map);
 }
