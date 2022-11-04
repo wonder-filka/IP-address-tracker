@@ -1,3 +1,9 @@
+@media (max-width: 310px) {
+  h1 {
+    font-size: 24px !important;
+  }
+}
+
 @media (max-width: 800px) {
   #searchForm {
     margin: 0 2vh;
@@ -7,10 +13,14 @@
     width: 100% !important;
   }
 
+  .bg {
+    height: 50vh !important;
+  }
+
   .result {
     width: calc(100% - 8vh) !important;
     left: 0 !important;
-    margin: 20vh 2vh !important;
+    margin: 25vh 2vh !important;
   }
 
   .resultWrap {
