@@ -14,7 +14,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/wonder-filka/IP-address-tracker)
-- Live Site URL: [Add live site URL here](https://courageous-begonia-0778bf.netlify.app/)
+- Live Site URL: [Netlify](https://courageous-begonia-0778bf.netlify.app/)
 
 #### Built with
 
