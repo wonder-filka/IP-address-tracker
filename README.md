@@ -15,6 +15,7 @@ Users should be able to:
 
 - Solution URL: [GitHub](https://github.com/wonder-filka/IP-address-tracker)
 - Live Site URL: [Netlify](https://courageous-begonia-0778bf.netlify.app/)
+- Linkedin: [Iryna Filonova](https://www.linkedin.com/in/iryna-filonova-6487a8237/)
 
 #### Built with
 
@@ -22,3 +23,5 @@ Users should be able to:
 - CSS
 - JavaScript
 - AJAX, AXIOS
+
+
